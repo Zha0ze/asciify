@@ -46,3 +46,49 @@ This file tracks what happened in each working session so we can pick up where w
 - Install core dependencies (Tailwind, shadcn/ui)
 - Set up the basic file structure from CONTRACTS.md
 - Optionally: Visual Buddy explores initial UI layout in Paper
+
+---
+
+## Session 2 — 2026-03-27
+
+### What we did
+- Scaffolded Vite + React + TypeScript project (npm, Tailwind CSS v4)
+- Created full directory structure from CONTRACTS.md (engine/, features/, components/, hooks/, styles/, types/, lib/)
+- Minimal App.tsx with dark theme placeholder
+- Dev server confirmed working at localhost:5173
+- Updated visual-buddy.md skill file — added /rams for accessibility review
+- Visual Buddy explored 3 panel style directions in Paper (Monospace Terminal, Clean Studio, Floating Cards)
+- Tetiana rejected Terminal style — deleted from Paper
+- Visual Buddy refined remaining 2 styles + created new minimalist variant (Style D)
+- Final 3 variants in Paper: Clean Studio (purple), Floating Cards (amber), Minimalist (no accent, grayscale)
+
+### Panel style exploration (in Paper file "ASCIIFY")
+- **Style B "Clean Studio"** (artboard 7P-0) — purple accent, flat sections, DevTools feel
+- **Style C "Floating Cards"** (artboard A4-0) — amber accent, card-based collapsible sections
+- **Style D "Minimalist"** (artboard IE-0) — no accent color, grayscale, inline layout, most compact, best accessibility
+- References used: nodes 1-0, 2-0, 3-0 (tuning panel screenshots from other tools)
+- **Status:** Starting point for design — needs Tetiana's direction on which to pursue
+
+### Files created/modified
+- Created: src/ directory structure with .gitkeep files
+- Created: src/App.tsx (minimal dark placeholder), src/index.css (Tailwind import)
+- Modified: vite.config.ts (added Tailwind plugin), index.html (fixed title)
+- Modified: .gitignore (added .claude/, merged Vite defaults)
+- Modified: agents/visual-buddy.md (added /rams skill)
+- Removed: Vite boilerplate (App.css, assets/, public/, README.md)
+
+### Decisions made
+- **Use AskUserQuestion tool** for presenting choices (Tetiana's preference — saved to memory)
+- **Panel style direction:** 3 options on the table, no final pick yet
+
+### Current state
+- **Project scaffolded** — Vite + React + TS + Tailwind running
+- **shadcn/ui not yet installed** — waiting for style direction to finalize
+- **3 panel designs in Paper** — ready for Tetiana to choose/refine
+- No feature code written yet
+
+### Next session should
+- Tetiana picks a panel style direction (or mixes elements)
+- Install shadcn/ui and configure theme based on chosen style
+- Design System agent builds first Ascii* components
+- Begin M1 feature work (upload → detect → render pipeline)
